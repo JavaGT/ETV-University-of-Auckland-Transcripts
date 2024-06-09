@@ -1,0 +1,11 @@
+<table border=0><tr bgcolor=999999><th>File Name</th><th>Name</th><th>Description</th><th>Duration</th><th>Type</th><th>Subject</th><th>Age Level</th><th>Channel</th><th>Recording Date</th><th>Recording Time</th></tr>
+<tr><td align='left' valign='top'>etv/the_fast_fourier_tra_20240208_1352</td><td  align='left' valign='top'>The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?</td><td align='left' valign='top'>In this video, we take a look at one of the most beautiful algorithms ever created: the Fast Fourier Transform (FFT). This is a tricky algorithm to understand so we take a look at it in a context that we are all familiar with: polynomial multiplication. You will see how the core ideas of the FFT can be &quot;discovered&quot; through asking the right questions. The key insights that are presented in this video is that polynomial multiplication can be improved significantly by multiplying polynomials in a special value representation. The challenge that presents itself is the problem of converting a polynomial from a standard coefficient representation to value representation. 
+
+We see that the FFT is an incredibly efficient recursive algorithm that performs this task, and we also discover that a slightly tweaked FFT (Inverse FFT) can also solve the reverse problem of interpolation. If this video doesn't blow your mind, I don't know what will. 
+
+Also a subtle mistake that a commenter made me aware of -- at 26:40 instead of replacing w with (1/n * e^{-2 * pi i/ n}), the actual right way to do this is by taking the final output of the IFFT at the end of the recursion and dividing by n. 
+
+So the full change is w = e^{-2 pi i / n} 
+And then somewhere outside the scope of the IFFT function ifft_result = 1/n * IFFT(values)
+
+The treatment of the FFT in this video is inspired by several well known references, mainly Introduction to Algorithms (Cormen et al.) and Algorithms (Papadimitriou et al.).</td><td align='center' valign='top'>00:28:22</td><td align='center' valign='top'>Lecture</td><td align='left' valign='top'>Education & Teaching, Engineering, Information Technology, Teaching, Technology</td><td align='left' valign='top'>Unrated</td><td align='left' valign='top'></td><td align='center' valign='top'>2024-02-08</td><td align='center' valign='top'>13:52:00</td></tr></table>
